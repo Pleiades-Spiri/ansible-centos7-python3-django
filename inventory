@@ -1,8 +1,7 @@
 [web-py]
-py1.digitalocean.com
+wagtail.pleiadesrobotics.com
 
 [web-php]
-php1.digitalocean.com
 
 [centos-7:children]
 web-py
