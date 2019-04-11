@@ -13,23 +13,25 @@
     # Websites / domains for these servers to host
     "websites": [
         {
-            "name": "yourserver",
-            "server_name": "yourserver.org",
+            "name": "pleiadesrobotics",
+            "server_name": "pleiadesrobotics.com",
             "server_aliases": [
-                "www.yourserver.org"
+                "www.pleiadesrobotics.com",
+                "wagtail.pleiadesrobotics.com"
             ],
             "sites": [
                 {
                     "path": "/",
-                    "project": "yourserver",
+                    "project": "pleiades-wagtail-master",
+                    "media_path": "/var/django/media/pleiades"
                 }
             ]
         },
     ]
   roles:
-    - { role: "python27", tags: ['python'] }
-    - { role: "python36", tags: ['python'] }
-    - { role: "postgresql-10-server", tags: ['postgresql']}
-    - { role: "web_all_httpd_mod_wsgi_directories", tags: ['web'] }
-    - { role: "web_all_httpd_mod_wsgi", tags: ['python', 'httpd'] }
-    - { role: "web_all_httpd_mod_wsgi_conf", tags: ['web'] }
+    - { role: "python27", tags: ["python"] }
+    - { role: "python36", tags: ["python"] }
+    - { role: "postgresql-10-server", tags: ["postgresql"]}
+    - { role: "web_all_httpd_mod_wsgi_directories", tags: ["web"] }
+    - { role: "web_all_httpd_mod_wsgi", tags: ["python", "httpd"] }
+    - { role: "web_all_httpd_mod_wsgi_conf", tags: ["web"] }

@@ -3,9 +3,8 @@
   hosts: "{{ host_group | default('web-py') }}"
   become: yes
   roles:
-    - { role: "repository_epel", tags: ['yum'] }
-    - { role: "repository_ius", tags: ['yum'] }
-    - { role: "web_all_yum_packages", tags: ['yum'] }
-    - { role: "mssql", tags: ['sql', 'sql server', 'msodbc'] }
-    - { role: "web_all_httpd", tags: ['httpd'] }
-    - { role: "redis", tags: ['cache', 'redis'] }
+    - { role: "repository_epel", tags: ["yum"] }
+    - { role: "repository_ius", tags: ["yum"] }
+    - { role: "web_all_yum_packages", tags: ["yum"] }
+    - { role: "web_all_httpd", tags: ["httpd"] }
+    - { role: "redis", tags: ["cache", "redis"] }

@@ -2,6 +2,7 @@
 wagtail.pleiadesrobotics.com
 
 [web-php]
+none
 
 [centos-7:children]
 web-py
