@@ -16,7 +16,21 @@
             "name": "pleiadesrobotics",
             "server_name": "pleiadesrobotics.com",
             "server_aliases": [
+                "spiri.ca",
+                "spirirobotics.ca",
+                "spirirobotics.com",
+                "spirirobotics.info",
+                "spirirobotics.net",
+                "spirirobotics.org",
+                "spirirobotics.us",
                 "www.pleiadesrobotics.com",
+                "www.spiri.ca",
+                "www.spirirobotics.ca",
+                "www.spirirobotics.com",
+                "www.spirirobotics.info",
+                "www.spirirobotics.net",
+                "www.spirirobotics.org",
+                "www.spirirobotics.us",
                 "wagtail.pleiadesrobotics.com"
             ],
             "sites": [
