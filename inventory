@@ -1,9 +1,9 @@
-[web-py]
+[web_py]
 wagtail.pleiadesrobotics.com
 
-[web-php]
+[web_php]
 none
 
-[centos-7:children]
-web-py
-web-php
+[centos_7:children]
+web_py
+web_php
