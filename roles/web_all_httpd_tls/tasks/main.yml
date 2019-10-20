@@ -35,11 +35,12 @@
 #     - certs/InCommonRSAServerCA_2.pem
 #     - certs/_cert.crt-endpoint
 
-- name: Create Apache website conf files.
-  template:
-    src: "apache.conf.j2"
-    dest: "{{ httpd_ext_dir }}/{{ item.name }}.conf"
-  with_items: "{{ websites }}"
+# DO NOT RE-ENABLE: This would overwrite the certs from Let's Encrypt.
+# - name: Create Apache website conf files.
+#   template:
+#     src: "apache.conf.j2"
+#     dest: "{{ httpd_ext_dir }}/{{ item.name }}.conf"
+#   with_items: "{{ websites }}"
 
 - name: Restart service httpd, in all cases
   service:
